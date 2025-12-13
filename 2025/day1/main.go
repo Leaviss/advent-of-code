@@ -13,7 +13,7 @@ func main() {
 	var doorPassword []int
 	var password int
 
-	file, err := os.Open("../data/rotations.txt")
+	file, err := os.Open("./data/rotations.txt")
 
 	if err != nil {
 		fmt.Printf("My Error: %v", err)
