@@ -18,6 +18,8 @@ func main() {
 	if err != nil {
 		fmt.Printf("My Error: %v", err)
 	}
+
+	defer file.Close()
 	
 	scanner := bufio.NewScanner(file)
 
